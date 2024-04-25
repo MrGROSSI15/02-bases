@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { CounterModule } from './counter/counter.module';
-import { HeroModule } from './heroes/heroes.module';
+// import { CounterComponent } from './counter/counter.component';
 // import { ListModule } from './heroes/heroes.module';
 import { AppComponent } from './app.component';
-// import { CounterComponent } from './counter/counter.component';
+import { AppRoutingModule } from './app-routing.module';
+import { CounterModule } from './counter/counter.module';
+import { DbzModule } from './dbz/dbz.module';
+import { HeroModule } from './heroes/heroes.module';
 import { ListComponent } from './heroes/list/list.component';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,7 @@ import { ListComponent } from './heroes/list/list.component';
     AppRoutingModule,
     CounterModule,
     HeroModule,
-    // ListModule,
+    DbzModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
